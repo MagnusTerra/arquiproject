@@ -21,5 +21,12 @@ def frac_to_bin(num):
     return result
 
 def bin_to_dec(num):
-    for i in num:
-        print(i)
+    cont = 0
+    raised = 0
+    upside_text = num[::-1]
+    for i in upside_text:
+        i = int(i)
+        cont += i * (2**raised)
+        raised += 1
+        #print(cont)
+    return cont
