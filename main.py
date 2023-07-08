@@ -12,7 +12,7 @@ def main():
                 tem = deci.split('.')
                 binary = dec_to_bin(int(tem[0]))
                 frac_binary = frac_to_bin(tem[1])
-                print(f'La parte fraccionaria del número es {binary}.{frac_binary}')
+                print(f'La parte fraccionaria del número es {binary}.{frac_binary}\n')
                 main()
             elif deci == 'exit':
                 print('Fin del programa')
@@ -22,19 +22,15 @@ def main():
                 main()
         elif op == '2':
             binary = input('Ingrese el numero: ')
-            temp = bin_to_dec(binary)
-            print(f'El numero es: {temp}')
-            main()
-        elif op == '3':
-            num_1 = input("Ingrese el primer numero: ")
-            if (num_1 != 0 or 1):
-                print("Debes ingresar numeros binarios (Solo ceros y unos)")
+            numeros = ['2', '3', '4', '5', '6', '7', '8','9']
+            if any(numero in binary for numero in numeros):
+                print("Ese no un numero binario \n ")
+                main()
             else:
-                num_2 = input("Ingrese el primer numero: ")
-                if (num_2 != 0 or 1):
-                    print("Debes ingresar numeros binarios (Solo ceros y unos)")
-                else:
-                    print(sum_bin(num_1, num_2))
+                temp = bin_to_dec(binary)
+                print(f'El numero es: {temp}\n')
+                main()
+            
         else:
             print('Esa no es una opcion valida')
             main()
