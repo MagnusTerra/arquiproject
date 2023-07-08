@@ -1,4 +1,5 @@
 def dec_to_bin(num):
+    num = int(num)
     if num == 0:
         return '0'
     
@@ -30,3 +31,12 @@ def bin_to_dec(num):
         raised += 1
         #print(cont)
     return cont
+
+def sum_bin(num_1, num_2):
+    num_1 = bin_to_dec(num_1)
+    num_2 = bin_to_dec(num_2)
+
+    resultado = num_1 + num_2
+    resultado = dec_to_bin(resultado)
+    return resultado
+    
