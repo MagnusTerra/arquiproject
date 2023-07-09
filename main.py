@@ -26,19 +26,19 @@ def main():
         elif op == '3':
             num1 = input('\nIngrese el primer numero: ')
             num2 = input('Ingrese el segundo numero: ')
-            sum_bin(num1, num2)
+            print(f'La suma de {num1} y {num2} es igual a: {sum_bin(num1, num2)}\n')
             main()
         
         elif op == '4':
             num1 = input('\nIngrese el primer numero: ')
             num2 = input('Ingrese el segundo numero: ')
-            sub_bin(num1, num2)
+            print(f'La resta de {num1} y {num2} es igual a: {sub_bin(num1, num2)}\n')
             main()
         
         elif op == '5':
             num1 = input('\nIngrese el primer numero: ')
             num2 = input('Ingrese el segundo numero: ')
-            mul_bin(num1, num2)
+            print(f'La multiplicacion de {num1} y {num2} es igual a: {mul_bin(num1, num2)}\n')
             main()
         
         else:

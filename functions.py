@@ -72,19 +72,22 @@ def bin_to_dec(num):
 def sum_bin(num1, num2):
     num1 = int(bin_to_dec(num1))
     num2 = int(bin_to_dec(num2))
-    resultado = num1 + num2
-    print(f'La suma de {dec_to_bin(str(num1))} y {dec_to_bin(str(num2))} es igual a: {dec_to_bin(str(resultado))}\n')
+    result = num1 + num2
+    result = dec_to_bin(str(result))
+    return result
+    
 
 def sub_bin(num1, num2):
     num1 = int(bin_to_dec(num1))
     num2 = int(bin_to_dec(num2))
-    resultado = num1 - num2
-    print(f'La resta de {dec_to_bin(str(num1))} y {dec_to_bin(str(num2))} es igual a: {dec_to_bin(str(resultado))}\n')
+    result = num1 - num2
+    result = dec_to_bin(str(result))
+    return result
 
 def mul_bin(num1, num2):
     num1 = int(bin_to_dec(num1))
     num2 = int(bin_to_dec(num2))
-    resultado = num1 * num2
-    print(f'La multiplicacin de {dec_to_bin(str(num1))} y {dec_to_bin(str(num2))} es igual a: {dec_to_bin(str(resultado))}\n')
-
+    result = num1 * num2
+    result = dec_to_bin(str(result))
+    return result
 
