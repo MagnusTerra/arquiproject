@@ -1,1 +1,7 @@
 __pycache__/
+bin/
+lib/
+lib64/
+include/
+
+*.cfg
